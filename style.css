@@ -117,12 +117,11 @@ section { margin-top: calc(var(--line) * 2.5); }
   color: var(--muted);
   font-variant-numeric: oldstyle-nums;
 }
-.what p, .links, .note { font-size: 1rem; line-height: 1.5rem; color: var(--muted); }
+.what p, .links { font-size: 1rem; line-height: 1.5rem; color: var(--muted); }
 .what p + p { margin-top: 0; }
 .what h3 + p, .what .name + p { margin-top: 0.25rem; }
 .what strong { color: var(--ink); font-weight: 600; }
 .what .name { font-size: 1.125rem; line-height: var(--line); color: var(--ink); }
-.note { margin-top: var(--line); }
 
 /* [PDF] [Code] [BibTeX]: BibTeX opens in place, without JavaScript */
 .links { display: flow-root; margin-top: 0.25rem; }
@@ -156,7 +155,7 @@ section { margin-top: calc(var(--line) * 2.5); }
   .track > .what, .track > .text { grid-column: 1; grid-row: 1; }
   .photo { width: 100%; margin: 0.5rem 0 0; }
   .when { text-align: right; font-size: 1.1875rem; }
-  .prose, .note { max-width: 28.75rem; }
+  .prose { max-width: 28.75rem; }
 }
 
 /* wide screens: two columns under a shared head row, so the page uses the width */
@@ -178,7 +177,7 @@ section { margin-top: calc(var(--line) * 2.5); }
   #publications { grid-column: 1; grid-row: 4 / span 2; }
   #education { grid-column: 2; grid-row: 4; }
   #research { grid-column: 2; grid-row: 5; }
-  .intro p, .prose, .note { max-width: 30rem; }
+  .intro p, .prose { max-width: 30rem; }
   #publications .track { grid-template-columns: minmax(0, 1fr) 6rem; column-gap: 2rem; }
   #education .track, #research .track { display: block; }
   #education .when, #research .when { text-align: left; font-size: 1.0625rem; }
